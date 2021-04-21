@@ -1,4 +1,4 @@
-## this os the task for Week3 Lexical scoping, this is the function made for this assignment which is related to
+## this is the task for Week3 Lexical scoping, this is the function made for this assignment which is related to
 ## the R langugage
 ## x is the matrix
 ## "s" is the null
