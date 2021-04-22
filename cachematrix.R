@@ -1,30 +1,30 @@
-## this is the task for Week3 Lexical scoping, this is the function made for this assignment which is related to
-## the R langugage
-## x is the matrix
-## "s" is the null
+## My functions make to find the matrix and also it inverse which is easier compared in solving manual
+## with the used of R language
+## x is the matrix for this code
+## "BAHAY" is the null
 
-makeCacheMatrix <- function(x = matrix(sample(1:300,9),2,2)) {
-  s <- NULL
+makeCacheMatrix <- function(x = matrix(sample()) {
+  BAHAY<- NULL
   set <- function(y) {
     x <<- y
-    s <<- NULL
+    BAHAY<- NULL
   }
   get <- function() x
-  setsolve <- function(solve) s <<- solve
-  getsolve <- function() s
+  setmean <- function(Inverse) (BAHAY<<- Inverse)
+  getmean <- function() BAHAY
   list(set = set, get = get,
-       setsolve = setsolve,
-       getsolve = getsolve)
+       setInverse = setInverse,
+       getInverse = getInverse)
 }
 
 cacheSolve <- function(x, ...) {
-  s <- x$getsolve()
-  if(!is.null(s)) {
-    message("getting inversed matrix")
-    return(s)
+  BAHAY <- x$getsolve()
+  if(!is.null(BAHAY)) {
+    message("getting cached data")
+    return(BAHAY)
   }
-  data <- x$get()
-  s <- solve(data, ...)
+  mat <- x$get()
+  BAHAY <- solve(data, ...)
   x$setsolve(s)
-  s
+  BAHAY
 }
